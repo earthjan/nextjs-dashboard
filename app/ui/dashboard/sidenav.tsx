@@ -8,7 +8,7 @@ import { wrappedSignOut } from "@/auth";
 import { useActionState } from "react";
 
 export default function SideNav() {
-  const [state, formAction] = useActionState(wrappedSignOut, {});
+  const [, formAction] = useActionState(wrappedSignOut, {});
 
   return (
     <div className="flex h-full flex-col px-3 py-4 md:px-2">
